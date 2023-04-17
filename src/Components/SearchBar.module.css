@@ -4,6 +4,7 @@
     max-width: 650px;
     margin: 3rem auto;
     padding: 2rem auto;
+    /* z-index: 50; */
 }
 
 .search_field{

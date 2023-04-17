@@ -10,6 +10,7 @@ export const CartContext = createContext({
     totalAmt: () => {},
     totalAmount: "",
     totalOrder: () => {},
+    reset: () => {}
 })
 
 const CartContextProvider = (props) => {
@@ -26,6 +27,10 @@ const CartContextProvider = (props) => {
             return prev.filter(item => item.id !== id)
         })
         totalItem();
+    }
+
+    const resetCart = () => {
+        setUserOrder([]);
     }
 
     const totalItem = () => {
@@ -94,7 +99,8 @@ const CartContextProvider = (props) => {
         addItem: addItemHandler,
         removeItem: removeItemHandler,
         totalOrder: totalOrderChangeHandler,
-        total: totalOrder
+        total: totalOrder,
+        reset: resetCart
     }
 
     return <CartContext.Provider value={context}>

@@ -24,7 +24,6 @@ const Samples = () => {
             <div className={classes.img_container}>
                 <img src={img3} className={classes.intro_img} alt="intro-img" />
             </div>
-          
         </div>
     </div>
 }

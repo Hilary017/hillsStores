@@ -177,7 +177,11 @@ const CartContainer = () => {
         <SearchBar onChange={(e) => {filterHandler(e.target.value)}} />
         <div className="container-fluid">
             <div className={`row d-flex justify-content-center ${classes.cart_container}`}>
-                {fallBack && <p style={{textAlign: "center", margin: "2rem"}}>Search not found</p>}
+                {fallBack && <div style={{textAlign: "center", margin: "2rem"}}>
+                    <p style={{fontWeight: "bold", fontSize: "1.5rem", marginBottom: "-0.2rem"}}>No Results</p>
+                    <p>Sorry! no result for your search.</p>
+                </div>
+                }
                 {itemFiltered ? itemFiltered.map(item => {
                     return <CartItem 
                                 key={item.id}

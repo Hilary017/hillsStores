@@ -58,7 +58,6 @@ const CartItem = (props) => {
         </p>
     </div>
     <div className={classes.cartitem_amount}>
-        
         <div>
             <p className={classes.cartitem__qtysect}>Quantity</p>
             <div className={classes.cartitem__actions}>
@@ -68,25 +67,10 @@ const CartItem = (props) => {
             </div>
         </div>
     </div>
-   
     <div className={classes.btn__div}>
         <button className={classes.cartitem__btn} onClick={addItemHandler}>Add to Cart</button>
     </div>
 </div>
-    
-    // <div className="col-sm-8 col-md-3 col-lg-2">
-    //     <img src={props.img} alt={props.description} />
-    //     <p>{props.name}</p>
-    //     <div>
-    //         <p>{props.price}</p>
-    //         <p>{props.total}</p>
-    //     </div>
-    //     <div>
-    //         <button>-</button>
-    //         <p>{props.quantity}</p>
-    //         <button>+</button>
-    //     </div>
-    // </div>
 }
 
 export default CartItem;

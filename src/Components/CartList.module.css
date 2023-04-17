@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    padding-bottom: 1rem;
     border-bottom: 3px solid black;
 }
 
@@ -56,6 +57,10 @@
 
 .cartitem_amount{
     margin: 2rem 0 0 0;
+}
+
+.cartitem__quantity{
+    margin: 0 1rem;
 }
 
 @media (min-width: 768px){

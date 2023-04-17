@@ -38,7 +38,7 @@ const CartCheckout = () => {
         checkOut =  <div className={`container ${classes.cart_check}`}>
             <p>You currently have no item in your cart.</p>
             <button onClick={() => {
-                navigate('/')
+                navigate('/', {replace: "true"})
             }}>Continue Shopping</button>
         </div>
     } else {
@@ -63,7 +63,7 @@ const CartCheckout = () => {
                     <button onClick={setCheck} className={classes.proceed__checkout}>Proceed to Payment</button>
                 </div>
                 }
-                {check && <Backdrop onCancel={cancelSetOut} />}
+                {check && <Backdrop />}
                 {check && <PayStack amount={ctx.total} onCancel={cancelSetOut} />}
             </div>
             <Footer />

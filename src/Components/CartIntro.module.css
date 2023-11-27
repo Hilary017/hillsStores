@@ -1,7 +1,3 @@
-/* .cart_carousel{
-    margin-top: 30rem;
-} */
-
 .cart_intro{
     background-color: rgba(221, 221, 221, 0.5);
     margin-top: 3.5rem;
@@ -21,7 +17,6 @@
 .cart_sect{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     text-align: center;
 }
 
@@ -53,47 +48,3 @@
         width: 50%;
     }
 }
-
-
-
-
-/* 
-
-
-.cart_text{
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    padding: 10rem 0 5rem 0;
-    margin-top: 3.5rem;
-}
-
-.cart_sect h2{
-    color: white;
-}
-
-.cart_sect button{
-    border: none;
-    padding: 1rem;
-    border-radius: 0.8rem;
-    transition: all 1s ease-in-out;
-}
-
-@media (min-width: 768px) {
-    .cart_text{
-        padding: 15rem 0;
-    }
-
-    .cart_sect{
-        margin-bottom: -10rem;
-    }
-
-    .cart_sect p{
-        width: 60%;
-    }
-
-    .cart_sect button:hover {
-        background-color: rgb(132, 29, 29);
-        color: white;
-    }
-} */

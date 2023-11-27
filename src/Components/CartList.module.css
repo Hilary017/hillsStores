@@ -1,9 +1,7 @@
 .cart_checkout{
-    /* margin-top: 8rem; */
     background-color: white;
     width: 95%;
     color: black;
-    /* box-shadow: 5px 5px 10px rgba(66, 66, 66, 0.5); */
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +41,6 @@
 .remove__item{
     background-color: rgb(203, 7, 7);
     border-radius: 0.3rem;
-    /* margin-left: 1.5rem; */
     padding: 0.5rem;
     margin: 3rem auto;
     color: white;
@@ -61,10 +58,4 @@
 
 .cartitem__quantity{
     margin: 0 1rem;
-}
-
-@media (min-width: 768px){
-    /* .cartitem_amount{
-        display: flex;
-    } */
 }

@@ -8,7 +8,6 @@
     width: 100%;
     z-index: 10;
     display: block;
-    /* margin-bottom: 10rem; */
 }
 
 .mart_nav{
@@ -35,8 +34,6 @@
     justify-content: space-between;
 }  
 
-.mobile__link{}
-
 .mart__link button{
     display: none;
 }
@@ -45,12 +42,7 @@
     display: none;
 }
 
-/* .mart_icon span{
-    margin: 1rem 0 0 -0.5rem;
-} */
-
 .mobile_nav{
-    /* height: 100%; */
     text-align: center;
     position: fixed;
     width: 100%;
@@ -60,17 +52,13 @@
     transform: translateX(-100%);
     transition: all 0.5s ease-in-out;
     z-index: 1000;
-    /* display: none; */
 }
 
 .desktop__nav{
-    /* height: 100%; */
-    /* text-align: center; */
     display: none;
 }
 
 .active{
-    /* display: block; */
     opacity: 1;
     transform: translateX(0%);
     z-index: 100;
@@ -94,13 +82,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* height: 50%; */
     border: none;
     background: none;
 }
 
 .toggle_true{
-    /* margin: 0.5rem -1rem 0.5rem 0; */
     margin: auto 0;
 }
 
@@ -174,8 +160,6 @@
     }
 
     .desktop__nav{
-        /* height: 100%; */
-        /* text-align: center; */
         display: flex;
         align-items: center;
         margin: auto 0;
@@ -194,14 +178,6 @@
         display: flex;
         justify-content: space-between;
     }
-
-    /* .desktop__nav button {
-        background: rgb(250, 22, 22);
-        color: white;
-        border: none;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-    } */
 
     .logout__btn button{
         background: rgb(250, 22, 22);

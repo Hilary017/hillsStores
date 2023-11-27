@@ -37,25 +37,20 @@ const CartContextProvider = (props) => {
         let qtyArray = [];
 
         for(const item of userOrder) {
-            console.log(item.quantity)
-            qtyArray.push(item.quantity)
-            console.log(qtyArray);
+            qtyArray.push(item.quantity);
         }
 
         const quantityArray = qtyArray.reduce((prevVal, curVal) => {
             return prevVal + curVal
-        }, 0)
-
-        console.log(quantityArray)
+        }, 0);
 
         return quantityArray;
     }
 
-    const totalOrderChangeHandler = (action, num) => {
+    const totalOrderChangeHandler = () => {
         let amountArray = [];
 
         for(const item of userOrder) {
-            console.log(item.total)
             amountArray.push(item.total)
         }
 
@@ -64,30 +59,20 @@ const CartContextProvider = (props) => {
         }, 0)
 
         setTotalOrder(quantityArray);
-        console.log(quantityArray)
-        console.log(totalOrder)
     }
 
-    const addItemHandler = (item, id, newQty, total) => {
+    const addItemHandler = (item, id, newQty) => {
         const existingItem = userOrder.find(item => item.id === id);
 
-        console.log(existingItem);
-
         if(existingItem) {
-            console.log(existingItem.quantity)
-            console.log(existingItem)
             existingItem.quantity += newQty
             existingItem.total = existingItem.quantity * existingItem.amount;
-            console.log(existingItem.total);
-            // totalOrderChangeHandler();
             return;
         } else {
             setUserOrder(prev => {
                 return prev.concat(item)
             })
         }
-     
-        // setItemQty(qty)
     }
 
     const context = {

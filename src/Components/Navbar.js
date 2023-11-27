@@ -3,7 +3,6 @@ import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext";
 
 import classes from "./Navbar.module.css";
-import SearchBar from "./SearchBar";
 
 const Navbar = () => {
     const ctx = useContext(CartContext);
@@ -41,7 +40,6 @@ const Navbar = () => {
                             Contact
                         </Link>
                     </li>
-                    {/* <SearchBar /> */}
                 </ul>
             <div className={classes.logout__btn}>
                 <Link to="/cart" className={classes.mart__link}>
@@ -52,7 +50,6 @@ const Navbar = () => {
                         <span>{ctx.totalItem}</span>
                     </div>
                 </Link>
-                {/* <button>Logout</button> */}
             </div>
             <div className={classes.mobile_cart}>
                 <Link to="/cart" className={classes.mobile_icon}>
@@ -89,11 +86,8 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </li>
-                {/* <button>Logout</button> */}
             </ul>
     </div>
 }
 
 export default Navbar;
-
-// style={{marginTop: "-1.0rem", marginRight: "-0.5rem"}}

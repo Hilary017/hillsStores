@@ -148,29 +148,18 @@ const CartContainer = () => {
         let itemFilter = true;
 
         for(const item of Dummy) {
-            console.log(item.name);
             itemFilter = item.name.includes("O")
-            console.log(itemFilter)
         }
 
         const filteredItem = Dummy.filter(item => item.name.toLowerCase().includes(content.toLowerCase()))
 
         setItemFiltered(filteredItem);
 
-        console.log(itemFilter)
-        console.log(filteredItem)
-        console.log(itemFiltered)
-
         if(filteredItem.length === 0) {
             setFallBack(true)
         } else {
             setFallBack(false)
         }
-
-        // setItemInclude(prev => !itemFilter)
-        // const filteredItem = Dummy.filter((item) => item)
-
-        // console.log(filteredItem)
     }
 
     return <>

@@ -71,7 +71,6 @@ const PayStack = (props) => {
             },
             onCancel() {
                 alert("Transaction cancelled successfully");
-                // ctx.items = []
             }
         })
     }

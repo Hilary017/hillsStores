@@ -1,5 +1,4 @@
 import classes from "./CartList.module.css";
-import img from "../images/Shirt.jpg";
 import { useState, useContext } from "react";
 import { CartContext } from "./context/CartContext";
 
@@ -15,13 +14,10 @@ const CartList = (props) => {
             if(item.id === id) {
                 item.quantity += 1
                 item.total = item.quantity * item.amount
-                console.log(item)
             }
         }
 
         ctx.totalOrder();
-
-        console.log(ctx.items)
     }
 
     const decreaseHandler = (id) => {
@@ -35,7 +31,6 @@ const CartList = (props) => {
             if(item.id === id) {
                 item.quantity = qty - 1
                 item.total = item.quantity * item.amount
-                console.log(item)
             }
         }
 

@@ -13,8 +13,6 @@
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     animation: payment 0.5s linear;
-    /* animation-iteration-count: 3; */
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .convert__text{
@@ -56,7 +54,6 @@
     border-radius: 0.2rem;
     padding: 0.5rem;
     border: none;
-    /* transition: all 0.5s ease-in; */
   }
 
   .confirmBtn:hover{
@@ -125,3 +122,4 @@
       transform: scale(1);
     }
   }
+  

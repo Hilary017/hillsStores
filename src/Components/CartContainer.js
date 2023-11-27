@@ -199,14 +199,6 @@ const CartContainer = () => {
                                 image={item.image} 
                                 />
                 })}
-                {/* <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem />
-                <CartItem /> */}
             </div>
         </div>
     </>

@@ -1,5 +1,4 @@
 import classes from "./Footer.module.css";
-import insta from "../images/instagram.png";
 
 const Footer = () =>  {
     return <div className={`${classes.footer__div}`}>

@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# hillsStores
+hillsStores is a fully responsive e-commerce Single Page Application(SPA) built with react.js. The useContext API was used to manage state accross components. Paystack payment gateway was integrated to enable users make seamless payment for goods purchased right from their bedroom. Do take a tour around the web app and have a wonderful shopping experience.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

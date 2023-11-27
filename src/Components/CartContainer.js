@@ -145,12 +145,6 @@ const CartContainer = () => {
     ]
 
     const filterHandler = (content) => {
-        // let itemFilter = true;
-
-        // for(const item of Dummy) {
-        //     itemFilter = item.name.includes("O")
-        // }
-
         const filteredItem = Dummy.filter(item => item.name.toLowerCase().includes(content.toLowerCase()))
 
         setItemFiltered(filteredItem);
